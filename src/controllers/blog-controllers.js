@@ -19,7 +19,6 @@ const getBlog = async (req, res) => {
 };
 
 const createBlog = async (req, res) => {
-  console.log(req.body);
   try {
     const newBlog = await BlogModel.create({
       title: req.body.title,
